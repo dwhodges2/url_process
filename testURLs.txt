@@ -1,6 +1,5 @@
-http://legacy.ciaonet.org.s3-website.eu-central-1.amazonaws.com/wps/aac09/aac09.html 
-http://legacy.ciaonet.org.s3-website.eu-central-1.amazonaws.com/wps/aac10/aac10.html 
-http://legacy.ciaonet.org.s3-website.eu-central-1.amazonaws.com/wps/abm02/abm02.html 
-http://legacy.ciaonet.org.s3-website.eu-central-1.amazonaws.com/wps/adj01/adj01.html
-http://legacy.ciaonet.org.s3-website.eu-central-1.amazonaws.com/wps/ado01/ado01.html
-
+http://www.columbia.edu/cgi-bin/cul/resolve?clio4492433
+http://www.columbia.edu/cgi-bin/cul/resolve?clio4492531
+http://www.columbia.edu/cgi-bin/cul/resolve?clio4492579
+http://www.columbia.edu/cgi-bin/cul/resolve?clio4492586
+http://www.columbia.edu/cgi-bin/cul/resolve?clio4492588

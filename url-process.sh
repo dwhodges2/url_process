@@ -2,21 +2,25 @@
 
 # Generalizable option handler
 
-while getopts ":cgh" opt; do
+while getopts ":cgrh" opt; do
   case ${opt} in
-    c ) # process option a
+    c ) # process option c
     myOpt=checkURLs
     echo "Check URLs"
       ;;
-    g ) # process option l
+    g ) # process option g
     myOpt=grepURLs
     echo "Grep URLs"
       ;;
-    h ) # process option l
+    r ) # process option r
+    myOpt=getRedirects
+    echo "Get Redirects"
+      ;;
+    h ) # process option h
     myOpt=helpMe
     echo "Help me!"
       ;;
-    \? ) echo "Usage: cmd [-c] [-g] [-h] <URL file> <optional grep pattern>"
+    \? ) echo "Usage: cmd [-c] [-g] [-r] [-h] <URL file> <optional grep pattern>"
       ;;
   esac
 done
@@ -50,7 +54,18 @@ case "$myOpt" in
 		echo -n $i $delimiter `curl --progress-bar -s $i | grep $grepPattern`
 		echo ""
 		done
-	
+			;;
+
+	getRedirects) 
+		# process URL headers and return Location
+		for i in ${theURLs[@]}
+		do
+		echo -n $i $delimiter `curl --progress-bar -I -X GET $i | grep -Fi Location`
+		echo ""
+		done
+
+
+
 esac
 
 
